@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.btn{
+    padding: 10px 10px;
+    background-color: #f5a9ded2;
+    border: none;
+    border-radius: 20px;
+}
+
+/* navbar styling */
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid goldenrod;
+}
+
+.nav-middle .nav-items, .nav-side .nav-items{
+    /* border: 2px solid saddlebrown; */
+    display: flex;
+    gap: 1rem;
+
+}
+
+li a{
+    color: #4f4f4f;
+    font-weight: 500;
+}
+
+.nav-side .nav-items{
+    align-items: center;
+}
+
+.nav-middle .nav-items{
+    gap: 2rem;
+    font-size: 1.4rem;
+}
+
+a:hover{
+    text-decoration: underline;
+    text-underline-offset: .6rem;
+}
+
+.nav-side .nav-items a{
+    font-size: 1.2rem;
+}
+
+.nav-items .regbtn a:hover{
+    text-decoration: none;
+}
+
+.nav-items .regbtn{
+    transition: all 300ms ease-in-out;
+}
+
+.nav-items .regbtn:hover{
+    background-color:#f47ed1d2 ;
+}
+
+
+/* Hamburger menu */
+
+.hamburger-nav{
+    display: none;
+}
+
+.hamburger-nav-inside{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+    /* border: 2px solid crimson; */
+}
+
+.hamburger-side{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 35px;
+    cursor: pointer;
+    /* border: 3px solid green; */
+}
+
+.hamburger-icon span{
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transition: all 300ms ease-in-out;  
+}
+
+.menu-links{
+    /* border: 2px solid blueviolet; */
+    position: absolute;
+    top:3rem;
+    right: 0;
+    width: 400px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;  
+}
+
+.menu-links a{
+    border: 2px solid saddlebrown;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: all 300ms ease-in-out;   
+}
+
+.menu-links.open{
+    max-height:100vh;
+}
+
+.hamburger-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px,5px);
+} 
+.hamburger-icon.open span:nth-child(2){
+    opacity: 0;
+} 
+.hamburger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px,-5px);
+} 
+
+
+
+
