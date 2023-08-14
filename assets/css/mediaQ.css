@@ -1,0 +1,358 @@
+@media (max-width:1180px){
+    
+       /* Service section Responsiveness  */
+
+      .service-sec__1,.service-sec__2{
+        flex-direction: column;
+      }
+    
+      .service-sec__main-box{
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .service-sec__main-box .service-sec__content-box{
+        height: 500px;
+        margin-bottom: 40px;
+      }
+}
+
+@media (max-width:1150px){
+    .main-navbar .menu-btn{
+        display: block;
+        color:white;
+    }
+
+    .menu-btn i.active::before{
+        content: "\f00d";
+        color: black;
+    }
+    .main-navbar .nav-links{
+        position: fixed;
+        background: #ffff;
+        color: black;
+        height: 100vh;
+        width: 60%;
+        top: 0;
+        right: -100%;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .main-navbar .nav-links.active{
+        right: 0px;
+    }
+
+    .main-navbar .nav-links li{
+        display: block;
+    }
+
+    .main-navbar .nav-links li a{
+        color: black;
+        display: inline-block;
+        margin: 20px 0px;
+        font-size: 23px;
+    }
+    .underline-hover::before {
+        height: 0px; 
+      }
+
+    .nav-btns{
+        display: none;
+    }
+
+      /* About section Responsiveness */
+
+    .about-section{
+        padding: 40px 20px;
+    }
+      .about-section .max-width{
+        flex-direction: column;
+
+    }
+
+    .about-section .about__image,
+    .about-section .about__text{
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    /* About Page resposiveness*/
+
+    .main-about .main-about-heading{
+        font-size: 2.4rem;
+    }
+
+    .main-about .main-about-content .aboutPage-details-hidden{
+        display: none;
+    }
+}
+
+@media (max-width:950px){
+
+    .main-about-content-box .main-about-content{
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .main-about-content-box .main-about-img{
+        width: 100%;
+        display: flex;
+    }
+    .main-about-img img{
+        width: 50%;
+    }
+
+    .ceo-details .extra-ceo-details{
+        display: block;
+    }
+
+    .ceo-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* text-align:justify ; */
+       
+    }
+
+    .main-about-img .ceo-details p{
+        width: 80%;
+        padding: 20px;
+        font-size: 1.2rem;
+        background-color:#e9e8e8;
+        border-radius: 40px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.099);
+        font-weight: 500;
+        color:black;
+        margin-bottom: 15px;
+    }
+
+    .main-about-content-box{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:850px){
+
+    /* service section Responsiveness */
+
+    .service-sec{
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.34),#ffe4f59f, #ffd1ee9f);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .service-sec__main-box{
+        flex-direction: column;
+        align-items: center;
+      }
+
+    .service-sec__1{
+        margin-bottom: 0;
+    }
+
+    .hero-section{
+        min-height: 80vh
+    }
+
+    /* Registration form responsiveness */
+
+    .form-main-container{
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+    }
+
+    .form-image-box{
+        height: 400px;
+        width: 100%;
+    }
+
+    .form-content-box{
+        width: 100%;
+    }
+
+    .form-content-box form{
+        max-width: 90%;
+    }
+
+}
+
+@media (max-width:750px){
+
+    .max-width{
+        padding: 0 20px;
+    }
+
+    .common-btn a{
+        font-size: 1rem;
+    }
+
+    .hero-section{
+        min-height: 70vh
+    }
+
+    .hero-section h3{
+        font-size: 2rem;
+    }
+
+    .hero-section h4{
+        font-size: 1.2rem;
+        margin-top: -5px;
+
+    }
+
+    .hero-section .hero-btn a{
+        font-size: 1.1rem;
+    }
+
+    .main-navbar .logo{
+        font-size: 2.7rem;
+    }
+    .main-navbar .logo span{
+        font-size: 2.9rem;
+    }
+
+    /* About section */
+    .about-section .max-width{
+        padding: 20px 20px; ;
+    }
+
+    .about-section .about__image,
+    .about-section .about__text{
+          width: 95%;
+    }
+
+    .about-section .about__text h3{
+        font-size: 2.5rem;
+        padding-bottom: 0px;
+    }
+    
+}
+
+@media (max-width:600px){
+    .main-navbar .logo{
+        font-size: 2.3rem;
+    }
+    .main-navbar .logo span{
+        font-size: 2.5rem;
+    }
+
+    .hero-section h3{
+        font-size: 1.7rem;
+    }
+
+    .hero-section h4{
+        font-size: 1.1rem;
+        margin-top: -5px;
+    }
+
+    .about-section .about__text .about-hidden{
+        display: none;
+    }
+
+    .service-sec .service-sec__heading{
+    font-size: 3rem;
+    }
+    .service-sec .service-sec__subheading{
+        font-size: 1.5rem;
+        margin-top: -5px;
+    }
+    .service-sec__content-box .service-sec__content-points{
+        display: none;
+    }
+    .service-sec__main-box .service-sec__content-box{
+        height: 400px;
+    }
+
+    /* About page */
+
+    .main-about .main-about-heading{
+        font-size: 2rem;
+    }
+
+    .ceo-details{
+        display: none;
+    }
+
+    .main-about-img img{
+        width: 100%;
+    }
+
+    .main-about-img {
+       /* border: 2px solid sienna; */
+       justify-content: center;
+
+    }
+
+    .main-about-img img{
+        align-self: center;
+    }
+
+    .main-about-content-box{
+        padding: 10px 20px;
+    }
+
+    /* Registration form */
+
+    .form-image-box img{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:450px){
+    .main-about-content .aboutPage-moreDetails-hidden{
+        display: none;
+    }
+
+    .main-about-content-box .main-about-img{
+        height: 450px;
+    }
+
+    .main-about-img img{
+        height: 400px;
+        align-self:normal;
+    }
+    
+    .main-about-content p{
+        text-align: left;
+    }
+
+    /* registration form */
+
+    form h3.form-main-heading{
+       font-size: 2rem;
+    }
+
+    .form-content h4.form-sub-heading{
+       font-size: 1.2rem;
+    }
+
+    .form-content .input-field input{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:400px){
+    .main-about .main-about-heading{
+        font-size: 1.5rem;
+    }
+
+    .team-heading h4{
+        font-size: 2.4rem;
+    }
+
+    /* registration form */
+
+    .form-content p{
+        font-size: 14px;
+    }
+
+    .form-content p a{
+        font-size: 15px;
+    }
+}
+

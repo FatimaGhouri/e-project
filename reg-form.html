@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap Css Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- regitration form css -->
+    <link rel="stylesheet" href="assets/css/reg-form.css">
+
+    <!--main css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- media css -->
+    <link rel="stylesheet" href="assets/css/mediaQ.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="main-navbar about-nav fixed-top" > </nav>
+
+    <div class="form-main-container">
+        <div class="form-image-box">
+            <img src="assets/images/form-side-pic.jpg" alt="form-image">
+        </div>
+        <div class="form-content-box">
+            <form action="#">
+                <h3 class="form-main-heading">Registration Form</h3>
+                <div class="form-content form-first" id="form-first">
+                    <h4 class="form-sub-heading">Personal Details</h4>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your Full Name" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" placeholder="Enter your Email" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" placeholder="Enter Password" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Confirm Password" required>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button class="common-btn form-btn" type="submit" onclick="showNextForm()">Next <img src="form-images/btn-arrow.png" alt="" class="right-arrow"></button>
+                    </div>
+
+                    <p>Already have an account ? <a href="#">Log in</a></p>
+                </div>
+
+                <div class="form-content form-second" id="form-second">
+                    <h4 class="form-sub-heading">Event Details</h4>
+                    <div class="input-field">
+                        <input type="text" placeholder="Your Address" required>
+                    </div>
+                    <div class="input-field margin-btm">
+                        <input placeholder="When you are getting married ?"  type="text" required>
+                    </div>
+                    <label class="container-checkbox">We're still deciding
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <div class="input-field margin-btm">
+                        <input type="text" placeholder="Country & City where you are getting married" required>
+                    </div>
+                    <label class="container-checkbox">We're still deciding
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <div class="form-buttons">
+                        <button class="common-btn form-btn" type="button" onclick="showPrevForm()">
+                            <img src="form-images/btn-arrow.png" alt="" class="left-arrow"> Back</button>
+                        <button class="form-btn" type="submit">Submit</button>
+                    </div>
+
+                    <p>Already have an account ? <a href="#">Log in</a></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    
+    <!-- font awsome link -->
+    <script src="https://kit.fontawesome.com/1a865bdf02.js" crossorigin="anonymous"></script>
+
+    <!-- jquery link for navbar -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- registration js link -->
+    <script src="./assets/js/reg-form.js"></script>
+        
+    <!-- javascript link for navbar -->
+    <script src="./assets/js/nav.js"></script>
+
+    <script src="assets/js/scriptmain.js"></script>
+
+    <!-- Bootstrap js Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

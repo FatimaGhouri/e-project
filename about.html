@@ -5,40 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Planner | Blissful Knot</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaQ.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mediaQ.css">
+
+     <!-- Bootstrap css -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <!-- swipper css -->
     <link rel="stylesheet" href="swiper/cdn.jsdelivr.net_npm_swiper@10.1.0_swiper-bundle.min.css">
+
 </head>
 
 <body>
 
-    <nav class="navbar about-nav">
-        <div class="max-width">
-            <div class="logo">Blissful<span>Knots</span></div>
-            <ul class="nav-links">
-                <li class="nav-item underline-hover"><a href="home.html">Home</a></li>
-                <li class="nav-item underline-hover"><a href="about.html">About</a></li>
-                <li class="nav-item underline-hover"><a href="gallery.html">Gallery</a></li>
-                <li class="nav-item underline-hover"><a href="contact.html">Contacts</a></li>
-            </ul>
-            <ul class="nav-btns">
-                <li class="nav-item underline-hover"><a href="login.html">Login</a></li>
-                <li class="nav-item"><button class="reg-btn"><a href="reg.html">Registration</a></button></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fa-solid fa-bars fa-xs"></i>
-            </div>
-        </div>
-    </nav>
+    <!-- Navbar -->
+    <nav class="main-navbar about-nav fixed-top"> </nav>
 
     <section class="main-about">
         <div class="max-width">
-            <h2 class="main-about-heading">About Blisssful Knots</h2>
+            <h2 class="main-about-heading">About Blissful Knots</h2>
             <div class="main-about-content-box">
                 <div class="main-about-img">
-                    <img src="assets/main-about.jpg" alt="">
-                    <p><span>Samia Imran</span> CEO at Blissful Knots</p>
+                    <img src="./assets/images/main-about.jpg" alt="">
+                    <div class="ceo-details">
+                        <p><span>Samia Imran</span> CEO at Blissful Knots</p>
+                        <p class="extra-ceo-details">Under her leadership, the Blissful Knots has flourished, setting new standards for elegance in every event.</p>
+                    </div>
                 </div>
 
                 <div class="main-about-content">
@@ -46,11 +39,13 @@
                     <p>Our mission revolves around creating unforgettable wedding experiences that seamlessly blend
                         creativity, elegance, and heartfelt moments. With years of invaluable experience in the
                         industry, we have honed our skills to craft weddings that not only meet expectations but exceed
-                        them. Our journey has been marked by a relentless pursuit of excellence, resulting in a deep
-                        understanding of every intricate detail that goes into making a wedding truly special. So what
-                        are you waiting for? Turn your wedding dreams into a reality? Contact us today and let's embark
+                        them.<span class="aboutPage-moreDetails-hidden"> Our journey has been marked by a relentless pursuit of excellence, resulting in a deep
+                        understanding of every intricate detail that goes into making a wedding truly special.</span><span
+                            class="aboutPage-details-hidden">So what
+                            are you waiting for? Turn your wedding dreams into a reality.</span>Contact us today and
+                        let's embark
                         on this journey together!</p>
-                    <button class="reg-btn"><a href="">Contact Us</a></button>
+                    <button class="common-btn"><a href="">Contact Us</a></button>
                 </div>
 
             </div>
@@ -69,78 +64,84 @@
                         <div class="card-image-content">
                             <span class="overlay"></span>
                             <div class="card-image">
-                                <img src="assets/mem-1-ag.jpg" alt="member-pic" class="card-image-inside">
+                                <img src="./assets/images/mem-1-ag.jpg" alt="member-pic" class="card-image-inside">
                             </div>
                         </div>
                         <div class="card-content">
                             <p class="name">Alina faraz</p>
                             <p class="work-title">Event Designer</p>
-                            <p class="description">Transforms visions into reality,will shape the atmosphere through decor, colors, and aesthetics</p>
+                            <p class="description">Transforms visions into reality,will shape the atmosphere through
+                                decor, colors, and aesthetics</p>
                         </div>
                     </div>
                     <div class="card swiper-slide">
                         <div class="card-image-content">
                             <span class="overlay"></span>
                             <div class="card-image">
-                                <img src="assets/mem-2.jpg" alt="member-pic" class="card-image-inside">
+                                <img src="./assets/images/mem-2.jpg" alt="member-pic" class="card-image-inside">
                             </div>
                         </div>
                         <div class="card-content">
                             <p class="name">Sarah Raheem</p>
                             <p class="work-title">Cake Designer</p>
-                            <p class="description">Crafts delectable works of art that sweetly symbolize the couple's journey, style and memories </p>
+                            <p class="description">Crafts delectable works of art that sweetly symbolize the couple's
+                                journey, style and memories </p>
                         </div>
                     </div>
                     <div class="card swiper-slide">
                         <div class="card-image-content">
                             <span class="overlay"></span>
                             <div class="card-image">
-                                <img src="assets/mem3-medium.jpg" alt="member-pic" class="card-image-inside">
+                                <img src="./assets/images/mem3-medium.jpg" alt="member-pic" class="card-image-inside">
                             </div>
                         </div>
                         <div class="card-content">
                             <p class="name">Jimmy John</p>
                             <p class="work-title">Photographer</p>
-                            <p class="description">Captures the fleeting moments that etch the couple's love story into timeless beautiful memories.</p>
+                            <p class="description">Captures the fleeting moments that etch the couple's love story into
+                                timeless beautiful memories.</p>
                         </div>
                     </div>
                     <div class="card swiper-slide">
                         <div class="card-image-content">
                             <span class="overlay"></span>
                             <div class="card-image">
-                                <img src="assets/mem-4-ag.jpg" alt="member-pic" class="card-image-inside">
+                                <img src="./assets/images//mem-4-ag.jpg" alt="member-pic" class="card-image-inside">
                             </div>
                         </div>
                         <div class="card-content">
                             <p class="name">Salman Afridi</p>
                             <p class="work-title">Catering Manager</p>
-                            <p class="description">Ensures everyone enjoys delicious and tastful food that matches the couple's preferences.</p>
+                            <p class="description">Ensures everyone enjoys delicious and tastful food that matches the
+                                couple's preferences.</p>
                         </div>
                     </div>
                     <div class="card swiper-slide">
                         <div class="card-image-content">
                             <span class="overlay"></span>
                             <div class="card-image">
-                                <img src="assets/mem-5-ag2.jpg" alt="member-pic" class="card-image-inside">
+                                <img src="./assets/images/mem-5-ag2.jpg" alt="member-pic" class="card-image-inside">
                             </div>
                         </div>
                         <div class="card-content">
                             <p class="name">Bilal Ahmed</p>
                             <p class="work-title">Wedding Stylist</p>
-                            <p class="description">Curates the couple's look, adding a touch of elegance and charm to their special day.</p>
+                            <p class="description">Curates the couple's look, adding a touch of elegance and charm to
+                                their special day.</p>
                         </div>
                     </div>
                     <div class="card swiper-slide">
                         <div class="card-image-content">
                             <span class="overlay"></span>
                             <div class="card-image">
-                                <img src="assets/mem-6.jpg" alt="member-pic" class="card-image-inside">
+                                <img src="./assets/images/mem-6.jpg" alt="member-pic" class="card-image-inside">
                             </div>
                         </div>
                         <div class="card-content">
                             <p class="name">Dawood Ali</p>
                             <p class="work-title">Logistic Manager</p>
-                            <p class="description">Ensures all the puzzle pieces fit together seamlessly, allowing the wedding day to flow effortlessly.</p>
+                            <p class="description">Ensures all the puzzle pieces fit together seamlessly, allowing the
+                                wedding day to flow effortlessly.</p>
                         </div>
                     </div>
 
@@ -152,26 +153,38 @@
         </div>
     </section>
 
+      
+    <!-- footer -->
+    <footer class=" bg-dark text-white pt-5 pb-4" id="foot">
+       
+    </footer>
 
 
-    <!-- js link for typed animation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"></script>
+
 
     <!-- jquery link for navbar -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
-    <!-- font awsome link -->
-    <script src="https://kit.fontawesome.com/1a865bdf02.js" crossorigin="anonymous"></script>
-
-    <script src="script.js"></script>
-
-
     <!-- Swiper main js link -->
     <script src="swiper/cdn.jsdelivr.net_npm_swiper@10.1.0_swiper-bundle.min js.js"></script>
 
+    <!-- javascript link for navbar -->
+    <script src="./assets/js/nav.js"></script>
 
-    <!-- js for navbar -->
-    <script src="scriptmain.js"></script>
+    <!-- Main js for navbar and swiper sliders -->
+    <script src="./assets/js/scriptmain.js"></script>
+
+    <!-- font awsome link -->
+    <script src="https://kit.fontawesome.com/1a865bdf02.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap5 link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+     <!-- javascript link for footer -->
+     <script src="./assets/js/footer.js"></script>
+
 
 
 </body>

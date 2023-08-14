@@ -5,64 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Planner | Blissful Knot</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaQ.css">
+    <!-- external css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mediaQ.css">
+
     <!-- swipper css -->
     <link rel="stylesheet" href="swiper/cdn.jsdelivr.net_npm_swiper@10.1.0_swiper-bundle.min.css">
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo">Blissful<span>Knots</span></div>
-            <ul class="nav-links">
-                <li class="nav-item underline-hover"><a href="home.html">Home</a></li>
-                <li class="nav-item underline-hover"><a href="about.html">About</a></li>
-                <li class="nav-item underline-hover"><a href="gallery.html">Gallery</a></li>
-                <li class="nav-item underline-hover"><a href="contact.html">Contacts</a></li>
-            </ul>
-            <ul class="nav-btns">
-                <li class="nav-item underline-hover"><a href="login.html">Login</a></li>
-                <li class="nav-item"><button class="reg-btn"><a href="reg.html">Registration</a></button></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fa-solid fa-bars fa-xs"></i>
-            </div>
-        </div>
-    </nav>
+    <!-- Navbar -->
+    <nav class="main-navbar fixed-top"> </nav>
 
-    <section class="hero" id="hero">
-        <div class="max-width">
-            <div class="hero-content">
-                <div class="text text1">Step into Our Enchanted World of Weddings</div>
-                <div class="text text2">Where <span class="typing"></span></div>
-                <div class="text text3">Await to Create Timeless Memories</div>
-                <button class="reg-btn"><a href="reg.html">Get Started</a></button>
-            </div>
-        </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <video src="./assets/video/banner/1.mp4" autoplay muted loop></video>
+        <h3>Your Vision, Our Expertise</h3>
+        <h4>Await to Create Timeless Memories</h4>
+        <button class="hero-btn"><a href="#">Get Started</a></button>
     </section>
 
-    <!-- About Section -->
 
-    <section class="about">
+    <!-- About Section -->
+    <section class="about-section">
         <div class="max-width">
             <div class="about__image">
-                <img src="assets/aboutpic2.jpg" alt="marriage pic">
+                <img src="assets/images/aboutpic2.jpg" alt="marriage pic">
             </div>
             <div class="about__text">
                 <h3>About Us</h3>
                 <p>With years of experience and an artistic touch, we create enchanting weddings that leave hearts
                     delighted. At <b>Blissful Knots</b>, we believe that every love story deserves a breathtaking
                     celebration that leaves you and your guests enchanted. Our passion for crafting extraordinary
-                    weddings has led us on a journey of turning dreams into reality. Our team of talented and
+                    weddings has led us on a journey of turning dreams into reality. <span class="about-hidden">Our team of talented and
                     imaginative wedding planners is here to transform your vision into a vivid tapestry of love and
-                    romance.Let us curate your perfect celebration, where memories are crafted, and love blossoms.</p>
+                    romance.Let us curate your perfect celebration, where memories are crafted, and love blossoms.</span></p>
 
-                <button class="reg-btn"><a href="">Know More</a></button>
+                <button class="common-btn"><a href="">Know More</a></button>
             </div>
         </div>
     </section>
+
+    <!-- Image gallery Slider -->
+
 
     <!-- Service Section -->
 
@@ -70,172 +61,212 @@
         <div class="max-width">
             <h3 class="service-sec__heading">Services</h3>
             <h4 class="service-sec__subheading">We Offer</h4>
-            <div class="service-sec__1">
-                <div class="service-sec__content-box">
-                    <div class="service-sec_img">
-                        <img src="assets/hall.png" alt="venue-pic">
+            <div class="service-sec__main-box">
+
+                <div class="service-sec__1">
+                    <div class="service-sec__content-box">
+                        <div class="service-sec_img">
+                            <img src="./assets/images/hall.png" alt="venue-pic">
+                        </div>
+                        <div class="service-sec__content service-sec__content1">
+
+                            <h3>Venue Booking</h3>
+                            <p class="main-para">At our venue booking service, we understand that finding the perfect
+                                location for your event is the cornerstone of a successful celebration. we're here to
+                                make
+                                this process seamless and stress-free.</p>
+
+                            <div class="service-sec__content-points">
+                                <div class="test-point">
+                                    <img src="./assets/images/right-arrow.png" alt="right-arrow" height="20px"
+                                        class="uni-arrow">
+                                    <p class="points">Best prices. </p>
+                                </div>
+                                <div class="test-point">
+                                    <img src="./assets/images/right-arrow.png" alt="right-arrow" height="20px"
+                                        class="uni-arrow">
+                                    <p class="points">Find the ideal location.</p>
+                                </div>
+                                <div class="test-point">
+                                    <img src="./assets/images/right-arrow.png" alt="right-arrow" height="20px"
+                                        class="uni-arrow">
+                                    <p class="points">Access top-notch facilities.</p>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="service-sec__content service-sec__content1">
 
-                        <h3>venue Booking</h3>
-                        <p class="main-para">At our venue booking service, we understand that finding the perfect
-                            location for your event is the cornerstone of a successful celebration. we're here to make
-                            this process seamless and stress-free.</p>
+                    <div class="service-sec__content-box">
+                        <div class="service-sec_img">
+                            <img src="./assets/images/wedding-arch.png" alt="decor-pic">
+                        </div>
+                        <div class="service-sec__content service-sec__content2">
 
-                        <div class="test-point">
-                            <img src="assets/right-arrow.png" alt="right-arrow" height="20px" class="uni-arrow">
-                            <p class="points">Best prices. </p>
-                        </div>
-                        <div class="test-point">
-                            <img src="assets/right-arrow.png" alt="right-arrow" height="20px" class="uni-arrow">
-                            <p class="points">Find the ideal location.</p>
-                        </div>
-                        <div class="test-point">
-                            <img src="assets/right-arrow.png" alt="right-arrow" height="20px" class="uni-arrow">
-                            <p class="points">Access top-notch facilities.</p>
-                        </div>
+                            <h3>Decor</h3>
+                            <p class="main-para">Our decor service is your gateway to transforming any venue into a
+                                beautiful wonderland that reflects your unique style and vision.</p>
 
+                            <div class="service-sec__content-points">
+                                <div class="test-point">
+                                    <img src="./assets/images/right-arrow.png" alt="right-arrow" height="20px"
+                                        class="uni-arrow">
+                                    <p class="points">premium decor elements.</p>
+                                </div>
+                                <div class="test-point">
+                                    <img src="./assets/images/right-arrow.png" alt="right-arrow" height="20px"
+                                        class="uni-arrow">
+                                    <p class="points">Bring your dream theme to life. </p>
+                                </div>
+                                <div class="test-point">
+                                    <img src="./assets/images/right-arrow.png" alt="right-arrow" height="20px"
+                                        class="uni-arrow">
+                                    <p class="points">Match your personality and event theme. </p>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                </div>
-
-                <div class="service-sec__content-box">
-                    <div class="service-sec_img">
-                        <img src="assets/wedding-arch.png" alt="decor-pic">
-                    </div>
-                    <div class="service-sec__content service-sec__content2">
-
-                        <h3>Decor</h3>
-                        <p class="main-para">Our decor service is your gateway to transforming any venue into a
-                            mesmerizing wonderland that reflects your unique style and vision.</p>
-
-                        <div class="test-point">
-                            <img src="assets/right-arrow.png" alt="right-arrow" height="20px" class="uni-arrow">
-                            <p class="points">premium decor elements.</p>
+                    <div class="service-sec__content-box">
+                        <div class="service-sec_img">
+                            <img src="./assets/images/photography.png" alt="camera-pic">
                         </div>
-                        <div class="test-point">
-                            <img src="assets/right-arrow.png" alt="right-arrow" height="20px" class="uni-arrow">
-                            <p class="points">Bring your dream theme to life. </p>
-                        </div>
-                        <div class="test-point">
-                            <img src="assets/right-arrow.png" alt="right-arrow" height="20px" class="uni-arrow">
-                            <p class="points">Match your personality and event theme. </p>
-                        </div>
+                        <div class="service-sec__content service-sec__content3">
 
-                    </div>
-                </div>
-                <div class="service-sec__content-box">
-                    <div class="service-sec_img">
-                        <img src="assets/photography.png" alt="camera-pic">
-                    </div>
-                    <div class="service-sec__content service-sec__content3">
+                            <h3>Outdoor Shooting & Photography</h3>
+                            <p class="main-para">Our photography and outdoor shooting service is dedicated to
+                                immortalizing
+                                the precious moments of your life in stunning frames that tell captivating stories.</p>
 
-                        <h3>Outdoor Shooting & Photography</h3>
-                        <p class="main-para">Our photography and outdoor shooting service is dedicated to immortalizing
-                            the precious moments of your life in stunning frames that tell captivating stories.</p>
+                            <div class="service-sec__content-points">
+                                <div class="test-point">
+                                    <img src="./assets/images/right-arrow.png" alt="right-arrow" height="20px"
+                                        class="uni-arrow">
+                                    <p class="points">Hire experienced photographers.</p>
+                                </div>
+                                <div class="test-point">
+                                    <img src="./assets/images/right-arrow.png" alt="right-arrow" height="20px"
+                                        class="uni-arrow">
+                                    <p class="points">Memorable photo album.</p>
+                                </div>
+                                <div class="test-point">
+                                    <img src="./assets/images/right-arrow.png" alt="right-arrow" height="20px"
+                                        class="uni-arrow">
+                                    <p class="points">Majestic outdoor shooting locations.</p>
+                                </div>
+                            </div>
 
-                        <div class="test-point">
-                            <img src="assets/right-arrow.png" alt="right-arrow" height="20px" class="uni-arrow">
-                            <p class="points">Hire experienced photographers.</p>
                         </div>
-                        <div class="test-point">
-                            <img src="assets/right-arrow.png" alt="right-arrow" height="20px" class="uni-arrow">
-                            <p class="points">Memorable photo album.</p>
-                        </div>
-                        <div class="test-point">
-                            <img src="assets/right-arrow.png" alt="right-arrow" height="20px" class="uni-arrow">
-                            <p class="points">Majestic outdoor shooting locations.</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="service-sec__2">
-                <div class="service-sec__content-box">
-                    <div class="service-sec_img">
-                        <img src="assets/wedding-cake.png" alt="cake-pic">
-                    </div>
-                    <div class="service-sec__content service-sec__content4">
-
-                        <h3>Cake Cutting Ceremony</h3>
-                        <p class="main-para">The cake-cutting ceremony is a cherished tradition that symbolizes the
-                            sweet beginning of a new chapter in life.So our cake-cutting ceremony service is here to add a delectable touch to your celebration. </p>
-
-                        <div class="test-point">
-                            <img src="assets/right-arrow.png" alt="right-arrow" height="20px" class="uni-arrow">
-                            <p class="points">Custom cake designs</p>
-                        </div>
-                        <div class="test-point">
-                            <img src="assets/right-arrow.png" alt="right-arrow" height="20px" class="uni-arrow">
-                            <p class="points">Gluten-free, and allergy-friendly cake options.
-                            </p>
-                        </div>
-                        <div class="test-point">
-                            <img src="assets/right-arrow.png" alt="right-arrow" height="20px" class="uni-arrow">
-                            <p class="points">Divine looking cakes that taste heavenly.</p>
-                        </div>
-
                     </div>
                 </div>
 
-                <div class="service-sec__content-box">
-                    <div class="service-sec_img">
-                        <img src="assets/food-delivery.png" alt="catering-pic">
+                <div class="service-sec__2">
+                    <div class="service-sec__content-box">
+                        <div class="service-sec_img">
+                            <img src="./assets/images/wedding-cake.png" alt="cake-pic">
+                        </div>
+                        <div class="service-sec__content service-sec__content4">
+
+                            <h3>Cake Cutting Ceremony</h3>
+                            <p class="main-para">The cake-cutting ceremony is a cherished tradition that symbolizes the
+                                sweet beginning of a new chapter in life.So here we are.</p>
+
+                            <div class="service-sec__content-points">
+                                <div class="test-point">
+                                    <img src="./assets/images/right-arrow.png" alt="right-arrow" height="20px"
+                                        class="uni-arrow">
+                                    <p class="points">Custom cake designs</p>
+                                </div>
+                                <div class="test-point">
+                                    <img src="./assets/images/right-arrow.png" alt="right-arrow" height="20px"
+                                        class="uni-arrow">
+                                    <p class="points">Gluten-free, and allergy-friendly cake options.
+                                    </p>
+                                </div>
+                                <div class="test-point">
+                                    <img src="./assets/images/right-arrow.png" alt="right-arrow" height="20px"
+                                        class="uni-arrow">
+                                    <p class="points">Divine looking cakes that taste heavenly.</p>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="service-sec__content service-sec__content5">
 
-                        <h3>Catering</h3>
-                        <p class="main-para">Our passion for exceptional cuisine and top-notch service ensures that
-                            every dish is a masterpiece, turning your celebration into an unforgettable feast.</p>
+                    <div class="service-sec__content-box">
+                        <div class="service-sec_img">
+                            <img src="./assets/images/food-delivery.png" alt="catering-pic">
+                        </div>
+                        <div class="service-sec__content service-sec__content5">
 
-                        <div class="test-point">
-                            <img src="assets/right-arrow.png" alt="right-arrow" height="20px" class="uni-arrow">
-                            <p class="points">Personalized dishes.</p>
-                        </div>
-                        <div class="test-point">
-                            <img src="assets/right-arrow.png" alt="right-arrow" height="20px" class="uni-arrow">
-                            <p class="points">Appetizers that reflect your taste and style.
-                            </p>
-                        </div>
-                        <div class="test-point">
-                            <img src="assets/right-arrow.png" alt="right-arrow" height="20px" class="uni-arrow">
-                            <p class="points">Setup and cleanup, our responsibility</p>
-                        </div>
+                            <h3>Catering</h3>
+                            <p class="main-para">Our passion for exceptional cuisine and service ensures that
+                                every dish is a masterpiece, turning your event into an unforgettable feast.</p>
 
+                            <div class="service-sec__content-points">
+                                <div class="test-point">
+                                    <img src="./assets/images/right-arrow.png" alt="right-arrow" height="20px"
+                                        class="uni-arrow">
+                                    <p class="points">Personalized dishes.</p>
+                                </div>
+                                <div class="test-point">
+                                    <img src="./assets/images/right-arrow.png" alt="right-arrow" height="20px"
+                                        class="uni-arrow">
+                                    <p class="points">Appetizers that reflect your taste and style.
+                                    </p>
+                                </div>
+                                <div class="test-point">
+                                    <img src="./assets/images/right-arrow.png" alt="right-arrow" height="20px"
+                                        class="uni-arrow">
+                                    <p class="points">Setup and cleanup, our responsibility</p>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                </div>
-                <div class="service-sec__content-box">
-                    <div class="service-sec_img">
-                        <img src="assets/red-carpet.png" alt="camera-pic">
-                    </div>
-                    <div class="service-sec__content service-sec__content6">
-
-                        <h3>Guest Management</h3>
-                        <p class="main-para">With our guest management service, you can be confident that your attendees
-                            will be treated to an exceptional and hassle-free experience</p>
-
-                        <div class="test-point">
-                            <img src="assets/right-arrow.png" alt="right-arrow" height="20px" class="uni-arrow">
-                            <p class="points"> warm wlecome to your guests</p>
+                    <div class="service-sec__content-box">
+                        <div class="service-sec_img">
+                            <img src="./assets/images/red-carpet.png" alt="camera-pic">
                         </div>
-                        <div class="test-point">
-                            <img src="assets/right-arrow.png" alt="right-arrow" height="20px" class="uni-arrow">
-                            <p class="points">Ideal seating arrangement</p>
-                        </div>
-                        <div class="test-point">
-                            <img src="assets/right-arrow.png" alt="right-arrow" height="20px" class="uni-arrow">
-                            <p class="points">VIP treatments for special guests</p>
-                        </div>
+                        <div class="service-sec__content service-sec__content6">
 
+                            <h3>Guest Management</h3>
+                            <p class="main-para">With our guest management service, you can be confident that your
+                                attendees
+                                will be treated to an exceptional and hassle-free experience</p>
+
+                            <div class="service-sec__content-points">
+                                <div class="test-point">
+                                    <img src="./assets/images/right-arrow.png" alt="right-arrow" height="20px"
+                                        class="uni-arrow">
+                                    <p class="points"> warm wlecome to your guests</p>
+                                </div>
+                                <div class="test-point">
+                                    <img src="./assets/images/right-arrow.png" alt="right-arrow" height="20px"
+                                        class="uni-arrow">
+                                    <p class="points">Ideal seating arrangement</p>
+                                </div>
+                                <div class="test-point">
+                                    <img src="./assets/images/right-arrow.png" alt="right-arrow" height="20px"
+                                        class="uni-arrow">
+                                    <p class="points">VIP treatments for special guests</p>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    
+    <!-- footer -->
+    <footer class=" bg-dark text-white pt-5 pb-4" id="foot">
+       
+    </footer>
 
-    <!-- js link for typed animation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"></script>
+
 
     <!-- jquery link for navbar -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
@@ -245,10 +276,22 @@
 
     <!-- Swiper main js link -->
     <script src="swiper/cdn.jsdelivr.net_npm_swiper@10.1.0_swiper-bundle.min js.js"></script>
+    
+    <!-- bootstrap5 link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-    <script src="script.js"></script>
-    <script src="scriptmain.js"></script>
-    <script src="scriptSwiper.js"></script>
+    <!-- javascript link for navbar -->
+    <script src="./assets/js/nav.js"></script>
+
+    <!-- javascript link for footer -->
+    <script src="./assets/js/footer.js"></script>
+
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/scriptmain.js"></script>
+    <script src="./assets/js/scriptSwiper.js"></script>
 
 </body>
 
