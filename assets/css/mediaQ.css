@@ -124,12 +124,21 @@
 
 @media only screen and (max-width: 758px) {
     /* write here tablet screen media query */
-    
+    .gallery h1 {
+        padding: 40px 0px;
+        font-size: 26px;
+    }
+    .column-frs {
+        width: 48%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     /* write here mobile screen media query */
-
+    .gallery h1 {
+        padding: 40px 0px;
+        font-size: 26px;
+    }
     .show-in-desktop-only{
         display: none !important;
     }
@@ -397,6 +406,9 @@
 }
 
 @media (max-width:450px){
+    .column-frs {
+        width: 100%;
+    }
     .main-about-content .aboutPage-moreDetails-hidden{
         display: none;
     }

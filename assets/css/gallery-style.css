@@ -10,13 +10,14 @@
 
 .gallery-col img {
     width: 100%;
-    height: 100%;
+    height: fit-content;
     cursor: pointer;
     gap: 70px;
     transition: .5s;
     object-fit: cover;
 }
-.gallery-content{
+
+.gallery-content {
     margin: 50px auto;
     display: flex;
     justify-content: center;
@@ -30,19 +31,20 @@
     display: flex;
     gap: 15px;
 }
+
 .gallery {
     display: flex;
 }
 
 .gallery-col {
     display: flex;
-    flex-direction: column;
     gap: 15px;
     padding: 0px;
+    flex-wrap: wrap;
 }
 
 .gallery h1 {
-    color:  black ;
+    color: black;
     font-size: 45px;
     padding: 40px 40px;
     margin-top: 30px;
@@ -51,7 +53,7 @@
     cursor: pointer;
     /* background-color: #ffb1cf; */
 }
-                                                                                                        
+
 .gallery-content h1::before {
     content: '';
     position: absolute;
@@ -63,22 +65,26 @@
     transform: translateX(-50%);
     animation: animate 4s linear infinite;
 }
-.gallery-input{
-    display: none;
-} 
 
-@keyframes  animate{
-    0%{
+.gallery-input {
+    display: none;
+}
+
+@keyframes animate {
+    0% {
         width: 100px;
     }
-    50%{
+
+    50% {
         width: 200px;
     }
-    100%{
+
+    100% {
         width: 100px;
     }
 }
-.top-content{
+
+.tabs-buttonss {
     background-color: rgb(241, 241, 241);
     width: 100%;
     margin: 0 auto 10px auto;
@@ -88,28 +94,37 @@
     margin-top: -45px;
     border-radius: 5px;
     box-shadow: 4px 4px 6px rgb(180, 180, 180);
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
-.top-content h3{
+
+label.gallery-tabs.active-tabs {
+    background: #da89a3;
+    color: #fff;
+}
+.tabs-buttonss h3 {
     height: 100%;
     background-color: rgb(198, 198, 198);
     line-height: 60px;
     padding: 0 50px;
     color: white;
 }
-.top-content label{
+
+.tabs-buttonss label {
     display: inline-block;
     height: 100%;
-    margin: 0 20px;
+    margin: 0 0;
     line-height: 60px;
+    padding: 0 10px;
     font-size: 18px;
     color: gray;
     cursor: pointer;
     transition: color .5s;
 }
-.top-content :hover{
+
+.top-content :hover {
     color: #9e0540;
 }
+
 /* 
 #check1:checked ~ .container .row #pic-cake{
     opacity: 1;
@@ -160,10 +175,15 @@
    
 } */
 .p-0 {
-    padding: 0!important;
+    padding: 0 !important;
 }
 
-
+.column-frs {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 
 
@@ -173,6 +193,7 @@
     .row {
         flex-direction: column;
     }
+
     h1 {
         font-size: 50px;
     }
@@ -180,9 +201,9 @@
 
 
 /* footer */
-.newsletter{
+.newsletter {
     padding-bottom: 15px;
-    display: flex ;
+    display: flex;
     align-items: center;
     /* justify-content: space-between; */
     border-bottom: 1px solid #ccc;
@@ -190,26 +211,30 @@
     padding: 0px;
     margin-top: 60px;
 }
-form .far{
+
+form .far {
     font-size: 18px;
     margin-right: 10px;
 }
-form input{
+
+form input {
     width: 100%;
     background-color: transparent;
     color: #ccc;
     border: 0;
     outline: none;
     padding-bottom: 10px;
-    
+
 }
+
 form button {
     background: transparent;
     border: 0;
     outline: none;
     cursor: pointer;
 }
-form button .fas{
+
+form button .fas {
     font-size: 16px;
     color: #ccc;
 }

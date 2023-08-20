@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/gallery-style.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/mediaQ.css">
 
 </head>
 
@@ -32,45 +32,96 @@
         </div>
 
 
-        <div class="top-content justify-content-center">
+        <div class="top-content tabs-buttonss justify-content-center">
 
-            <label class="gallery-tabs" data-tab-button="all" for="check1">All Photos</label>
-            <label class="gallery-tabs" data-tab-button="catering" for="check2">Catering</label>
-            <label class="gallery-tabs" data-tab-button="photography" for="check3">Photography</label>
-            <label class="gallery-tabs" data-tab-button="cakecutting" for="check4">Cake Cutting</label>
+            <label class="gallery-tabs active-tabs" data-tab-button="all" for="check1">All Photos</label>
+            <label class="gallery-tabs  " data-tab-button="catering" for="check2">Catering</label>
+            <label class="gallery-tabs  " data-tab-button="photography" for="check3">Photography</label>
+            <label class="gallery-tabs " data-tab-button="cakecutting" for="check4">Cake Cutting</label>
         </div>
 
 
         <div class="row gallery-row">
+            <div class="col gallery-col all" id="pic-cake" style="display: none;">
+
+                <div class="column-frs">
+                    <img src="assets\images\gallery-images\cake-1.jpg" alt="">
+                    <img src="assets\images\gallery-images\cake-2.jpg" alt="">
+                    <img src="assets\images\gallery-images\cake-3.jpg" alt="">
+                    <img src="assets\images\gallery-images\cake-4.jpg" alt="">
+                    <img src="assets\images\gallery-images\cake-7.jpg" alt="">
+                    <img src="assets\images\gallery-images\catering-3.jpg" alt="">
+                    <img src="assets\images\gallery-images\cake-5.jpg" alt="">
+
+                </div>
+                <div class="column-frs">
+                    <img src="assets\images\gallery-images\cake-6.jpg" alt="">
+                    <img src="assets\images\gallery-images\catering-6.jpg" alt="">
+                    <img src="assets\images\gallery-images\catering-11.jpg" alt="">
+                    <img src="assets\images\gallery-images\catering-13.jpg" alt="">
+                    <img src="assets\images\gallery-images\catering-10.jpg" alt="">
+                    <img src="assets\images\gallery-images\catering-5.jpg" alt="">
+                    <img src="assets\images\gallery-images\catering-8.jpg" alt="">
+                </div>
+                <div class="column-frs">
+                    <img src="assets\images\gallery-images\photography-1.jpg" alt="">
+                    <img src="assets\images\gallery-images\photography-6.jpg" alt="">
+                    <img src="assets\images\gallery-images\photography-2.jpg" alt="">
+                    <img src="assets\images\gallery-images\photography-4.jpg" alt="">
+                    <img src="assets\images\gallery-images\photography-3.jpg" alt="">
+                    <img src="assets\images\gallery-images\photography-5.jpg" alt="">
+                    <img src="assets\images\gallery-images\photography-8.jpg" alt="">
+                    <img src="assets\images\gallery-images\photography-7.jpg" alt="">
+                </div>
+            </div>
+
             <div class="col gallery-col cakecutting" id="pic-cake" style="display: none;">
-                <img src="assets\images\gallery-images\cake-1.jpg" alt="">
-                <img src="assets\images\gallery-images\cake-2.jpg" alt="">
-                <img src="assets\images\gallery-images\cake-3.jpg" alt="">
-                <img src="assets\images\gallery-images\cake-4.jpg" alt="">
-                <img src="assets\images\gallery-images\cake-7.jpg" alt="">
-                <img src="assets\images\gallery-images\catering-3.jpg" alt="">
-                <img src="assets\images\gallery-images\cake-5.jpg" alt="">
-                <img src="assets\images\gallery-images\cake-6.jpg" alt="">
+                <div class="column-frs">
+                    <img src="assets\images\gallery-images\cake-1.jpg" alt="">
+                    <img src="assets\images\gallery-images\cake-2.jpg" alt="">
+                    <img src="assets\images\gallery-images\cake-3.jpg" alt="">
+                </div>
+                <div class="column-frs">
+                    <img src="assets\images\gallery-images\cake-4.jpg" alt="">
+                    <img src="assets\images\gallery-images\cake-7.jpg" alt="">
+                    <img src="assets\images\gallery-images\catering-3.jpg" alt="">
+                </div>
+                <div class="column-frs">
+                    <img src="assets\images\gallery-images\cake-5.jpg" alt="">
+                    <img src="assets\images\gallery-images\cake-6.jpg" alt="">
+                </div>
             </div>
 
             <div class="col gallery-col catering" id="catering" style="display: none;">
-                <img src="assets\images\gallery-images\catering-6.jpg" alt="">
-                <img src="assets\images\gallery-images\catering-11.jpg" alt="">
-                <img src="assets\images\gallery-images\catering-13.jpg" alt="">
-                <img src="assets\images\gallery-images\catering-10.jpg" alt="">
-                <img src="assets\images\gallery-images\catering-5.jpg" alt="">
-                <img src="assets\images\gallery-images\catering-8.jpg" alt="">
+                <div class="column-frs">
+                    <img src="assets\images\gallery-images\catering-6.jpg" alt="">
+                    <img src="assets\images\gallery-images\catering-11.jpg" alt="">
+                </div>
+                <div class="column-frs">
+                    <img src="assets\images\gallery-images\catering-13.jpg" alt="">
+                    <img src="assets\images\gallery-images\catering-10.jpg" alt="">
+                </div>
+                <div class="column-frs">
+                    <img src="assets\images\gallery-images\catering-5.jpg" alt="">
+                    <img src="assets\images\gallery-images\catering-8.jpg" alt="">
+                </div>
             </div>
 
             <div class="col gallery-col photography" id="photography" style="display: none;">
-                <img src="assets\images\gallery-images\photography-1.jpg" alt="">
-                <img src="assets\images\gallery-images\photography-6.jpg" alt="">
-                <img src="assets\images\gallery-images\photography-2.jpg" alt="">
-                <img src="assets\images\gallery-images\photography-4.jpg" alt="">
-                <img src="assets\images\gallery-images\photography-3.jpg" alt="">
-                <img src="assets\images\gallery-images\photography-5.jpg" alt="">
-                <img src="assets\images\gallery-images\photography-7.jpg" alt="">
-                <img src="assets\images\gallery-images\photography-8.jpg" alt="">
+                <div class="column-frs">
+                    <img src="assets\images\gallery-images\photography-1.jpg" alt="">
+                    <img src="assets\images\gallery-images\photography-6.jpg" alt="">
+                    <img src="assets\images\gallery-images\photography-2.jpg" alt="">
+                </div>
+                <div class="column-frs">
+                    <img src="assets\images\gallery-images\photography-4.jpg" alt="">
+                    <img src="assets\images\gallery-images\photography-3.jpg" alt="">
+                    <img src="assets\images\gallery-images\photography-5.jpg" alt="">
+                </div>
+                <div class="column-frs">
+                    <img src="assets\images\gallery-images\photography-7.jpg" alt="">
+                    <img src="assets\images\gallery-images\photography-8.jpg" alt="">
+                </div>
             </div>
 
         </div>
@@ -85,25 +136,23 @@
 
     <!-- jquery link for navbar -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-
+    <!-- bootstrap5 link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <!-- js link for typed animation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"></script>
-
 
 
     <!-- font awsome link -->
     <script src="https://kit.fontawesome.com/1a865bdf02.js" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-    <!-- bootstrap5 link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+
+
+    <script src="./assets/js/script.js"></script>
 
     <!-- javascript link for navbar -->
     <script src="./assets/js/nav.js"></script>
@@ -114,22 +163,21 @@
 
 
 
-    <script src="./assets/js/script.js"></script>
-
     <script>
 
-       
-            $('.gallery-col').show()
-        
+
+        $('.all').show()
+
 
         $(document).on('click', '.gallery-tabs', function () {
             let attributeValue = $(this).attr('data-tab-button');
-            if (attributeValue == 'all') {
-                $('.gallery-col').fadeIn()
-            } else {
-                $('.gallery-col').hide();
-                $(`.${attributeValue}`).fadeIn()
-            }
+
+            $('.gallery-tabs').removeClass('active-tabs');
+            $(this).addClass('active-tabs');
+
+            $('.gallery-col').hide();
+            $(`.${attributeValue}`).fadeIn()
+
 
         })
     </script>
