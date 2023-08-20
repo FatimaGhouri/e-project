@@ -10,7 +10,7 @@
 
 .gallery-col img {
     width: 100%;
-    height: fit-content;
+    height:-webkit-fill-available;
     cursor: pointer;
     gap: 70px;
     transition: .5s;
