@@ -89,6 +89,99 @@
     }
 }
 
+@media (max-width:1440px) {
+    /* write here for extra large screen media query */
+
+    #tranding {
+      padding: 3px 0;
+    }
+  }
+
+@media only screen and (max-width: 1200px) {
+    /* write here large screen media query */
+    .desk-navbar{
+        display: none;
+    }  
+
+    .hamburger-nav{
+        display: flex;
+    }
+}
+   
+
+
+@media only screen and (max-width: 992px) {
+    /* write here desktop screen media query */
+    .tranding-slider-control .swiper-button-next {
+        left: 70% !important;
+        transform: translateX(-70%) !important;
+      }
+      .tranding-slider-control .swiper-button-prev {
+        left: 30% !important;
+        transform: translateX(-30%) !important;
+      }
+}
+
+@media only screen and (max-width: 758px) {
+    /* write here tablet screen media query */
+    
+}
+
+@media only screen and (max-width: 600px) {
+    /* write here mobile screen media query */
+
+    .show-in-desktop-only{
+        display: none !important;
+    }
+    .show-in-mobile-only{
+        display: block !important;
+    }
+    .max-width {
+        padding: 0px 10px;
+    }
+
+    .navbar .logo span {
+        font-size: 2.2rem;
+    }
+
+    .navbar .logo {
+        font-size: 2rem;
+    }
+    
+    /* for home page hero section btn */
+    .box {
+        min-height: 600px;
+    }
+
+    .box h1 {
+        font-size: 32px;
+    }
+
+     /* for home page slider */
+     #tranding .tranding-slider {
+        height: 45rem;
+    }
+    .tranding-slide {
+          width: 28rem !important;
+          height: 36rem !important;
+    }
+    .tranding-slide .tranding-slide-img img {
+          width: 28rem !important;
+          height: 36rem !important;
+    }
+    .tranding-slider-control .swiper-button-next {
+          left: 80% !important;
+          transform: translateX(-80%) !important;
+    }
+    .tranding-slider-control .swiper-button-prev {
+        left: 20% !important;
+        transform: translateX(-20%) !important;
+    }
+}
+
+   
+  
+
 @media (max-width:950px){
 
     .main-about-content-box .main-about-content{
