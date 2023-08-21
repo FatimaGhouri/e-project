@@ -2,23 +2,28 @@
 
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 1,
-  spaceBetween: 10,
+  speed: 500,
+  spaceBetween: 48,
+  loop: true,
   pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+      el: ".swiper-pagination",
+      clickable: true,
+  },
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
- 
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 50,
-    },
+      200: {
+          slidesPerView: 1,
+      },
+      640: {
+          slidesPerView: 2,
+      },
+      900: {
+          slidesPerView: 3,
+      },
   },
-  
 });
 
   // trending section slider scripting (Home Page)

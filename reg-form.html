@@ -16,7 +16,9 @@
     <!-- media css -->
     <link rel="stylesheet" href="assets/css/mediaQ.css">
 
-    <title>Document</title>
+    <title> Registration Form | Blissful Knots | Wedding Planner</title>
+
+
 </head>
 <body>
 
@@ -33,20 +35,32 @@
                 <div class="form-content form-first" id="form-first">
                     <h4 class="form-sub-heading">Personal Details</h4>
                     <div class="input-field">
-                        <input type="text" placeholder="Enter your Full Name" required>
+                        <input type="text" placeholder="Enter your Full Name" id="username" required>
+                        <div class="validation-error validation-name-error">Invalid name*</div>
                     </div>
+
                     <div class="input-field">
-                        <input type="email" placeholder="Enter your Email" required>
+                        <input type="email" placeholder="Enter your Email" id="useremail" required>
+                        <div class="validation-error validation-emai-error ">Invalid email*</div>
+
                     </div>
-                    <div class="input-field">
-                        <input type="password" placeholder="Enter Password" required>
+
+                    <div class="input-field reg-password">
+                        <input type="password" placeholder="Enter Password" id="userpassword" required>
+                    </div>
+                    <div class="validation-password-error">
+                        <p class="password-requirments"><span style="font-weight: 500;">-></span> Your Password must have :</p>
+                        <p class="password-requirments"><span style="color: red;">*</span> more than 8 character</p>
+                        <p class="password-requirments"><span style="color: red;">*</span> Uppercase & lowercase letters</p>
+                        <p class="password-requirments"><span style="color: red;">*</span> Special character & numeric value</p>
+
                     </div>
                     <div class="input-field">
                         <input type="text" placeholder="Confirm Password" required>
                     </div>
 
                     <div class="form-buttons">
-                        <button class="common-btn form-btn" type="submit" onclick="showNextForm()">Next <img src="form-images/btn-arrow.png" alt="" class="right-arrow"></button>
+                        <button class="common-btn form-btn" type="button" onclick="showNextForm()">Next <img src="form-images/btn-arrow.png" alt="" class="right-arrow"></button>
                     </div>
 
                     <p>Already have an account ? <a href="#">Log in</a></p>
@@ -75,8 +89,8 @@
 
                     <div class="form-buttons">
                         <button class="common-btn form-btn" type="button" onclick="showPrevForm()">
-                            <img src="form-images/btn-arrow.png" alt="" class="left-arrow"> Back</button>
-                        <button class="form-btn" type="submit">Submit</button>
+                            <img src="form-images/btn-arrow.png" alt="" class="left-arrow"> Back </button>
+                        <button class="common-btn form-btn" type="submit">Submit</button>
                     </div>
 
                     <p>Already have an account ? <a href="#">Log in</a></p>

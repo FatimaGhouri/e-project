@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    width: 400px;
+    height: 450px;
+}
+
+.form-control {
+    border: 1px solid #ff69b4;
+    margin: 5px auto;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.btn-login {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: rgb(223, 89, 134);
+}
+
+@font-face {
+    font-family: 'Beau Rivage';
+    src: url('path-to-your-bold-font.woff2') format('woff2'),
+        url('path-to-your-bold-font.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+label {
+    font-family: 'Beau Rivage', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+h1 {
+    font-family: 'Beau Rivage', sans-serif;
+    font-weight: bold;
+}

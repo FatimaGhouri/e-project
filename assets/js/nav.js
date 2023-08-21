@@ -1,3 +1,4 @@
+
 var navbar = `
 <div class="max-width">
             <div class="logo">Blissful<span>Knots</span></div>
