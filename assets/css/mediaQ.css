@@ -1,3 +1,35 @@
+@media (max-width:1260px){
+
+    /* Testimonial section responsiveness */
+
+    .testimonial-section .testimonial-card{
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .testimonial-section .testimonial-section__main-container{
+        flex-direction: column;
+    }
+    .testimonial-section .testimonial-section__box1{
+        justify-content: space-around;
+        margin-bottom: 25px;
+    }
+    .testimonial-section .testimonial-section__box2{
+        justify-content: center;
+    }
+    /* .testimonial-section .max-width{
+        background: url(../images/testimonial-bg2.jpg);
+        background-image: linear-gradient(rgba(255, 255, 255, 0.612), rgba(255, 192, 203, 0.363)), url(../images/testimonial-bg2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    } */
+/* 
+    .testimonial-section .testimonial-card{
+    background-color: #dbdbdb;
+        
+    } */
+}
 @media (max-width:1180px){
     
        /* Service section Responsiveness  */
@@ -9,12 +41,15 @@
       .service-sec__main-box{
         flex-direction: row;
         justify-content: space-around;
+        padding-bottom: 10px;
       }
 
       .service-sec__main-box .service-sec__content-box{
         height: 500px;
         margin-bottom: 40px;
       }
+
+
 }
 
 @media (max-width:1150px){
@@ -86,6 +121,19 @@
 
     .main-about .main-about-content .aboutPage-details-hidden{
         display: none;
+    }
+
+    /* Testimonial section responsiveness */
+
+    .testimonial-section .testimonial-section__box1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testimonial-section__box1 .testimonial-card-2{
+        margin-left:0 ;
+        margin-top: 25px;
     }
 }
 
@@ -178,6 +226,12 @@
         max-width: 90%;
     }
 
+    /* Testimonial section resp. */
+
+    .testimonial-section{
+        margin-top: 40px;
+    }
+
 }
 
 @media (max-width:750px){
@@ -228,6 +282,12 @@
     .about-section .about__text h3{
         font-size: 2.5rem;
         padding-bottom: 0px;
+    }
+
+    /* Testimonila section resp. */
+    
+    .testimonial-section .testimonial-section__heading{
+        font-size: 2.5rem;
     }
     
 }
@@ -353,6 +413,21 @@
 
     .form-content p a{
         font-size: 15px;
+    }
+
+    /* Testimonial section Resp. */
+
+    .testimonial-card__upper .testimonial__customer-detail{
+        margin-left: 15px;
+
+    }
+    .testimonial__customer-detail p{
+        font-size: 1.1rem;
+        font-weight: 650;
+    }
+
+    .testimonial__customer-detail .star-rating {
+        font-size: 12px;
     }
 }
 

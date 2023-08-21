@@ -27,6 +27,7 @@ body{
 }
 
 .common-btn:hover{
+    color: white;
     background-color: #f40561;
     box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.156);
 }
@@ -304,6 +305,10 @@ ul.nav-links {
     margin-left: -5px;
 }
 
+.about__text button a{
+    color: white;
+}
+
 /* service section styling -----------*/
 
 /* .service-sec{
@@ -409,7 +414,119 @@ ul.nav-links {
     font-weight: 500;
 }
 
+/* Testimonial section styling */
+
+.testimonial-section{
+    padding: 0 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.testimonial-section .max-width{
+    /* border: 4px solid crimson; */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.133);
+}
+
+.testimonial-section .testimonial-section__heading{
+    font-size: 3.2rem;
+    color:#4a4a4a;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.testimonial-section .testimonial-section__main-container{
+    /* border: 3px solid orange; */
+    display: flex;
+    justify-content:space-around;
+}
+
+.testimonial-section .testimonial-section__box1{
+    /* border: 4px solid blue; */
+    display: flex;
+}
+
+.testimonial-section .testimonial-section__box2{
+    /* border: 3px solid rgb(204, 255, 0); */
+    display: flex;
+}
+
+.testimonial-section__box1 .testimonial-card-2{
+    margin-left: 35px;
+}
+
+.testimonial-section .testimonial-card{
+    /* border: 3px solid black; */
+    background-color: #edebeb;
+    max-width: 380px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px 20px 10px 20px ;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.019);
+    
+}
+
+.testimonial-card .testimonial-card__upper{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.058);
+    background-color: white;
+
+}
+
+.testimonial-card__upper .testimonial__image{
+    width: 90px;
+    height: 90px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid rgb(85, 85, 85);
+}
+
+.testimonial-card__upper .testimonial__image img{
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial-card__upper .testimonial__customer-detail{
+    /* border: 3px solid  rebeccapurple; */
+    margin-left: 25px;
+    padding: 10px;
+}
+
+.testimonial__customer-detail p{
+    font-size: 1.3rem;
+    font-weight: 650;
+    margin-bottom: 2px;
+
+}
+
+.testimonial__customer-detail .star-rating{
+    color: rgb(249, 196, 61);
+}
+
+.testimonial-card .testimonial__content p{
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.testimonial-card .testimonial__content p i{
+    font-size: 1.6rem;
+    padding: 0 10px;
+}
+
 /* footer */
+
 .newsletter{
     padding-bottom: 15px;
     display: flex ;
@@ -583,7 +700,7 @@ form button .fas{
 
 .team-member-sec{
     box-sizing: content-box;
-    height: 90vh;
+    /* height: 90vh; */
     padding: 40px 0;
     background-color: #ddd;
     display: flex;
@@ -615,23 +732,24 @@ form button .fas{
 
 .slide-container{
     max-width: 1200px;
-    /* border: 2px solid red; */
     width: 100%;
     margin: 40px 0;
 }
-.slide-content{
+
+.slide-container .slide-content{
     padding-left: 45px;
     padding-right: 45px;
 }
 
-.card-wrapper{
-   margin-bottom: 70px;
+.slide-content .card-wrapper{
+    margin-bottom: 40px;
 }
 
-.card{
+.slide-container .card-wrapper .card{
     border-radius:25px;
     background-color: #fff;
 }
+
 .card-image{
     position: relative;
     width: 200px;
@@ -646,7 +764,6 @@ form button .fas{
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid #f16098;
 }
 
 .card-image-content{
@@ -682,25 +799,31 @@ form button .fas{
     background-color: #fff;
 
 }
-.card-image-content,
-.card-content{
+.card .card-image-content{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 14px;
 }
 
-.card-content .name{
-    font-size: 1.4rem;
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.card .card-content .name{
+    font-size: 1.5rem;
     font-weight: 600;
     color: #333;
+    margin-bottom: 1px;
 }
 
-.card-content .work-title{
+.card .card-content .work-title{
     font-size: 1.1rem;
     font-weight: 500;
     color: #333;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .card-content .description{
