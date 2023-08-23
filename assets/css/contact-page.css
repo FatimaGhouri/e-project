@@ -11,8 +11,10 @@
 .contact-wrapper {
     background: #e8e6e6;
     background-image: url('../images/pexels-juan-sauras-2737656.jpg');
-    background-size: 35% 100%;
+    background-size: 40% 100%;
     background-repeat: no-repeat;
+    object-fit: cover;
+    
 
 }
 
@@ -20,7 +22,8 @@
     position: relative;
     width: 100%;
     padding: 40px 100px;
-    top: 100px;
+    /* top: 100px; */
+   margin-top: 70px;
 }
 
 .contactUs .title {
@@ -51,6 +54,7 @@
     padding: 40px;
     background: #fff;
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.313);
+    padding-bottom: 0;
 }
 
 .box-main {
@@ -103,14 +107,14 @@
 
 .inputbox input {
     padding: 10px;
-    font-size: 1.1em;
+    font-size: 0.9em;
     outline: none;
     border: 1px solid #333;
 }
 
 .inputbox textarea {
     padding: 10px;
-    font-size: 1.1em;
+    font-size: 0.9em;
     outline: none;
     border: 1px solid #333;
     resize: none;
@@ -126,7 +130,7 @@
     font-weight: 500;
     cursor: pointer;
     padding: 14px 15px;
-    border-radius: 30px;
+    border-radius: 27px;
 }
 
 .inputbox ::placeholder {
@@ -167,6 +171,7 @@
     color: #fff;
     font-size: 1.1em;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .info .infobox div a {
