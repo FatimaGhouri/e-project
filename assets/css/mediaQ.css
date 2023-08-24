@@ -207,7 +207,11 @@
     .column-frs {
         width: 48%;
     }
+    .show-in-mobile{
+        display: block !important;
+    }
 }
+
 
 @media only screen and (max-width: 600px) {
 

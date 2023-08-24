@@ -105,6 +105,9 @@ body {
 ul.nav-links {
     margin: 0;
 }
+.show-in-mobile{
+    display: none !important;
+}
 
 .main-navbar li a {
     color: white;
