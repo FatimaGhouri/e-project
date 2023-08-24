@@ -9,16 +9,16 @@ var footer = `
   <ul class="col-md-2 col-lg-2 col-xl-3 mx-auto-3 pl-0 list-unstyled">
   <h5 class="text-uppercase mb-4 font-weight-bold text-light mt-3 ">Quick Links</h5>
   <li>
-    <a href="#" class="text-white" style="text-decoration: none;">HOME</a>
+    <a href="home.html" class="text-white" style="text-decoration: none;">HOME</a>
   </li>
   <li>
-    <a href="#" class="text-white" style="text-decoration: none;">ABOUT</a>
+    <a href="about.html" class="text-white" style="text-decoration: none;">ABOUT</a>
   </li>
   <li>
-    <a href="#" class="text-white" style="text-decoration: none;">GALLERY</a>
+    <a href="gallery.html" class="text-white" style="text-decoration: none;">GALLERY</a>
   </li>
   <li>
-    <a href="#" class="text-white" style="text-decoration: none;">CONTACT US</a>
+    <a href="contact.html" class="text-white" style="text-decoration: none;">CONTACT US</a>
   </li>
 
 </ul>
@@ -49,7 +49,7 @@ var footer = `
       Have A QUESTION ? </h5>
       <form class="newsletter">
           <i class="far fa-envelope"></i>
-          <input type="email" placeholder="Enter Your Email Id" required>
+          <input type="email" placeholder="Enter Your Email Address" required>
           <button type="submit"><i class="fas fa-arrow-right"></i></button>
       </form>
   </div>
