@@ -8,14 +8,14 @@ function Validation() {
         document.getElementById("usercheck").innerHTML = " ";
     }
     else {
-        document.getElementById("usercheck").innerHTML = " **Invalid User Name ";
+        document.getElementById("usercheck").innerHTML = " Invalid User Name ";
         return false;
     }
-    if (emailcheck.test(p)) {
+    if (passcheck.test(p)) {
         document.getElementById("passcheck").innerHTML = " ";
     }
     else {
-        document.getElementById("passcheck").innerHTML = " **Invalid Password";
+        document.getElementById("passcheck").innerHTML = " Invalid Password";
         return false;
     }
 }

@@ -30,75 +30,91 @@
             <img src="assets/images/form-side-pic.jpg" alt="form-image">
         </div>
         <div class="form-content-box">
-            <form action="#">
+            <form action="#" method="post" id="registration-form">
                 <h3 class="form-main-heading">Registration Form</h3>
                 <div class="form-content form-first" id="form-first">
                     <h4 class="form-sub-heading">Personal Details</h4>
                     <div class="input-field">
-                        <input type="text" placeholder="Enter your Full Name" id="username" required>
-                        <div class="validation-error validation-name-error">Invalid name*</div>
+                        <input type="text" placeholder="Enter your Full Name" id="username" autocomplete="off" required>
+                        <div class="validation-error validation-name-error" id="error-name-msg" style="display: none;">Invalid name</div>
                     </div>
 
                     <div class="input-field">
-                        <input type="email" placeholder="Enter your Email" id="useremail" required>
-                        <div class="validation-error validation-emai-error ">Invalid email*</div>
-
+                        <input type="email" placeholder="Enter your Email" id="useremail" autocomplete="off" required>
+                        <div class="validation-error validation-email-error" id="error-email-msg" style="display: none;">Invalid email</div>
                     </div>
 
                     <div class="input-field reg-password">
-                        <input type="password" placeholder="Enter Password" id="userpassword" required>
+                        <input type="password" placeholder="Enter Password" id="userpassword" autocomplete="off" required>
+                        <img src="assets/images/eye-slash-solid.svg"  alt="eye-icon" id="eye-password" style="color:#4d4d4d ;">
+                        <div class="validation-error validation-password-error" id="error-password-msg" style="display: none;">
+                            <p><span style="font-weight: 500;">-></span> Your Password must have:</p>
+                            <p><span style="color: red;">*</span> More than 8 character</p>
+                            <p><span style="color: red;">*</span> Special character</p>
+                            <p><span style="color: red;">*</span> Uppercase & lowercase letters</p>
+                        </div>
                     </div>
-                    <div class="validation-password-error">
-                        <p class="password-requirments"><span style="font-weight: 500;">-></span> Your Password must have :</p>
-                        <p class="password-requirments"><span style="color: red;">*</span> more than 8 character</p>
-                        <p class="password-requirments"><span style="color: red;">*</span> Uppercase & lowercase letters</p>
-                        <p class="password-requirments"><span style="color: red;">*</span> Special character & numeric value</p>
 
-                    </div>
-                    <div class="input-field">
-                        <input type="text" placeholder="Confirm Password" required>
+                     <div class="input-field">
+                        <input type="password" placeholder="Confirm Password" id="confirm-password" autocomplete="off" required>
+                        <div class="validation-error password-confirm-error" id="confirm-password-msg" style="display: none;">Unmatched password</div>
                     </div>
 
                     <div class="form-buttons">
-                        <button class="common-btn form-btn" type="button" onclick="showNextForm()">Next <img src="form-images/btn-arrow.png" alt="" class="right-arrow"></button>
+                        <button class="common-btn form-btn" type="button" onclick="showNextForm()">Next <img src="assets/images/btn-arrow.png" alt="" class="right-arrow"></button>
                     </div>
 
                     <p>Already have an account ? <a href="#">Log in</a></p>
                 </div>
 
-                <div class="form-content form-second" id="form-second">
+                <div class="form-content form-second" id="form-second" >
                     <h4 class="form-sub-heading">Event Details</h4>
                     <div class="input-field">
-                        <input type="text" placeholder="Your Address" required>
+                        <input type="text" placeholder="Your Address" id="useraddress" required>
+                        <div class="validation-error validation-address-error" id="error-address-msg" style="display: none;">Invalid Address</div>
+
                     </div>
                     <div class="input-field margin-btm">
-                        <input placeholder="When you are getting married ?"  type="text" required>
+                        <label class="marry-date">When you are getting married ?</label>
+                        <input type="date" id="marry-date-input" required>
                     </div>
-                    <label class="container-checkbox">We're still deciding
-                        <input type="checkbox">
+                    <label class="container-checkbox date-checkbox"> <span>We're still deciding</span>
+                        <input type="checkbox" id="marry-date-checkbox">
                         <span class="checkmark"></span>
                     </label>
 
                     <div class="input-field margin-btm">
-                        <input type="text" placeholder="Country & City where you are getting married" required>
+                        <label class="marry-country">where you are getting married ?</label>
+                        <input type="text" placeholder="Country & City" id="marry-country-input" required>
+                        <div class="validation-error country-confirm-error" id="error-country-msg" style="display: none;">Invalid Country/city</div>
                     </div>
-                    <label class="container-checkbox">We're still deciding
-                        <input type="checkbox">
+                    <label class="container-checkbox country-checkbox">We're still deciding
+                        <input type="checkbox" id="marry-country-checkbox">
                         <span class="checkmark"></span>
                     </label>
 
                     <div class="form-buttons">
                         <button class="common-btn form-btn" type="button" onclick="showPrevForm()">
-                            <img src="form-images/btn-arrow.png" alt="" class="left-arrow"> Back </button>
+                            <img src="assets/images/btn-arrow.png" alt="" class="left-arrow"> Back </button>
                         <button class="common-btn form-btn" type="submit">Submit</button>
                     </div>
-
-                    <p>Already have an account ? <a href="#">Log in</a></p>
                 </div>
 
             </form>
         </div>
     </div>
+
+    
+    <div id="myModal" class="modal">
+        <div class="modal-box" >
+          
+          <img src="assets/images/popup-tick.png" alt="tick-icon">
+          <h4>Welcome</h4>
+          <p class="model-para">You are successfully registered!</p>
+          <a href="index.html"><button id="okButton">OK</button></a>
+        
+        </div>
+      </div>
     
     <!-- font awsome link -->
     <script src="https://kit.fontawesome.com/1a865bdf02.js" crossorigin="anonymous"></script>
@@ -107,7 +123,7 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
     <!-- registration js link -->
-    <script src="./assets/js/reg-form.js"></script>
+    <script src="./assets/js/regform.js"></script>
         
     <!-- javascript link for navbar -->
     <script src="./assets/js/nav.js"></script>

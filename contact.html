@@ -26,7 +26,7 @@
 
     <div class="contact-wrapper">
         <div class="contactUs">
-            <div class="title">
+            <div class=" title">
                 <h2>Get In Touch</h2>
             </div>
 
@@ -39,22 +39,29 @@
                             <div class="row50">
                                 <div class="inputbox">
                                     <span>First Name</span>
-                                    <input type="text" placeholder="Enter your first name">
+                                    <input type="text" id="firstName" placeholder="Enter your first name" autocomplete="off" required>
+                                    <div class="validation-error" id="first-name-error" style="display: none;">Invalid name</div>
+
                                 </div>
                                 <div class="inputbox">
                                     <span>Last Name</span>
-                                    <input type="text" placeholder="Enter your last name">
+                                    <input type="text" id="lastName" placeholder="Enter your last name"  autocomplete="off" required>
+                                    <div class="validation-error" id="last-name-error" style="display: none;">Invalid name</div>
                                 </div>
                             </div>
 
                             <div class="row50">
                                 <div class="inputbox">
                                     <span>Email</span>
-                                    <input type="text" placeholder="Enter your email">
+                                    <input type="text" id="userEmail" placeholder="Enter your email"  autocomplete="off" required>
+                                    <div class="validation-error" id="email-error" style="display: none;">Invalid email</div>
+
                                 </div>
                                 <div class="inputbox">
                                     <span>Contact Number</span>
-                                    <input type="text" placeholder="Enter your contact number">
+                                    <input type="text" id="contactNumber" placeholder="Enter your contact number" required>
+                                    <div class="validation-error" id="contact-error" style="display: none;">Invalid email</div>
+
                                 </div>
                             </div>
 
@@ -66,9 +73,7 @@
                             </div>
 
                             <div class="row100">
-                                <div class="inputbox">
-                                    <input type="submit" value="send">
-                                </div>
+                                <button class="contact-btn" type="submit"><a href="">Send</a></button>
                             </div>
                         </div>
                     </form>
@@ -132,6 +137,7 @@
     <!-- javascript link for navbar -->
     <script src="./assets/js/nav.js"></script>
     <script src="assets/js/scriptmain.js"></script>
+    <script src="assets/js/contact.js"></script>
 
     <!-- links for icons-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

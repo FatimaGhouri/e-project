@@ -3,7 +3,7 @@ var navbar = `
 <div class="max-width">
             <div class="logo">Blissful<span>Knots</span></div>
             <ul class="nav-links">
-                <li class="nav-item underline-hover"><a href="home.html">Home</a></li>
+                <li class="nav-item underline-hover"><a href="index.html">Home</a></li>
                 <li class="nav-item underline-hover"><a href="about.html">About</a></li>
                 <li class="nav-item underline-hover"><a href="gallery.html">Gallery</a></li>
                 <li class="nav-item underline-hover"><a href="contact.html">Contacts</a></li>

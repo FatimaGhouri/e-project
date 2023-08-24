@@ -1,23 +1,25 @@
-
-@media (max-width:1260px){
+@media (max-width:1300px) {
 
     /* Testimonial section responsiveness */
 
-    .testimonial-section .testimonial-card{
+    .testimonial-section .testimonial-card {
         max-width: 500px;
         width: 100%;
     }
 
-    .testimonial-section .testimonial-section__main-container{
+    .testimonial-section .testimonial-section__main-container {
         flex-direction: column;
     }
-    .testimonial-section .testimonial-section__box1{
+
+    .testimonial-section .testimonial-section__box1 {
         justify-content: space-around;
         margin-bottom: 25px;
     }
-    .testimonial-section .testimonial-section__box2{
+
+    .testimonial-section .testimonial-section__box2 {
         justify-content: center;
     }
+
     /* .testimonial-section .max-width{
         background: url(../images/testimonial-bg2.jpg);
         background-image: linear-gradient(rgba(255, 255, 255, 0.612), rgba(255, 192, 203, 0.363)), url(../images/testimonial-bg2.jpg);
@@ -25,41 +27,41 @@
         background-position: center;
         background-size: cover;
     } */
-/* 
+    /* 
     .testimonial-section .testimonial-card{
     background-color: #dbdbdb;
         
     } */
 }
 
-@media (max-width:1180px){
+@media (max-width:1180px) {
 
     /* Service section Responsiveness  */
 
     .service-sec__1,
     .service-sec__2 {
         flex-direction: column;
-      }
-    
-      .service-sec__main-box{
-        flex-direction: row;
-        justify-content: space-around;
-         padding-bottom: 10px;
-      }
-
-      .service-sec__main-box .service-sec__content-box{
-        height: 500px;
-        margin-bottom: 40px;
-      }
-}
-
-@media (max-width:1150px){
-    .main-navbar .menu-btn{
-        display: block;
-        color:white;
     }
 
-    .service-sec__main-box{
+    .service-sec__main-box {
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 10px;
+    }
+
+    .service-sec__main-box .service-sec__content-box {
+        height: 500px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:1150px) {
+    .main-navbar .menu-btn {
+        display: block;
+        color: white;
+    }
+
+    .service-sec__main-box {
         flex-direction: row;
         justify-content: space-around;
     }
@@ -140,20 +142,20 @@
         font-size: 2.4rem;
     }
 
-    .main-about .main-about-content .aboutPage-details-hidden{
+    .main-about .main-about-content .aboutPage-details-hidden {
         display: none;
     }
 
     /* Testimonial section responsiveness */
 
-    .testimonial-section .testimonial-section__box1{
+    .testimonial-section .testimonial-section__box1 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .testimonial-section__box1 .testimonial-card-2{
-        margin-left:0 ;
+    .testimonial-section__box1 .testimonial-card-2 {
+        margin-left: 0;
         margin-top: 25px;
     }
 }
@@ -194,7 +196,7 @@
     }
 }
 
-@media only screen and (max-width: 758px){
+@media only screen and (max-width: 758px) {
 
     /* write here tablet screen media query */
     .gallery h1 {
@@ -277,7 +279,7 @@
 
 
 
-@media (max-width:950px){
+@media (max-width:950px) {
 
     .main-about-content-box .main-about-content {
         width: 100%;
@@ -321,6 +323,13 @@
     .main-about-content-box {
         flex-direction: column;
     }
+
+    /* Registration form */
+
+    /* .form-content .marry-date,
+    .form-content .marry-country{
+        font-size: 15px;
+    } */
 }
 
 @media (max-width:850px) {
@@ -353,6 +362,7 @@
         flex-direction: column;
         height: auto;
         gap: 2rem;
+        padding: 40px 20px 30px 20px;
     }
 
     .form-image-box {
@@ -365,12 +375,12 @@
     }
 
     .form-content-box form {
-        max-width: 90%;
+        max-width: 95%;
     }
 
     /* Testimonial section resp. */
 
-    .testimonial-section{
+    .testimonial-section {
         margin-top: 40px;
     }
 
@@ -429,8 +439,8 @@
     }
 
     /* Testimonila section resp. */
-    
-    .testimonial-section .testimonial-section__heading{
+
+    .testimonial-section .testimonial-section__heading {
         font-size: 2.5rem;
     }
 }
@@ -471,7 +481,11 @@
     }
 
     .service-sec__main-box .service-sec__content-box {
-        height: 400px;
+        height: auto;
+    }
+
+    .service-sec__content-box .service-sec__content {
+        height:fit-content;
     }
 
     /* About page */
@@ -509,18 +523,35 @@
     }
 
     /* for contact page */
-.contactUs .title h2 {
-    color: #000000;
-    font-weight: 600;
- 
-}
-.info .infobox div p {
-    color: #fff;
-    font-size: 1.1em;
-    margin-top: 0;
-    
+    .contactUs .title h2 {
+        font-size: 2.5rem;
+    }
 
-}
+    .info .infobox div p {
+        color: #fff;
+        font-size: 1.1em;
+        margin-top: 0;
+    }
+
+    /* Modal responsiveness */
+
+    .modal-box {
+        max-width: 340px;
+        width: 100%;
+    }
+
+    .modal .modal-box img{
+        height:55px;
+        width: 55px;
+    }
+
+    .modal .modal-box h4{
+        font-size: 1.3rem;
+    }
+
+    .modal .modal-box p{
+        font-size: 15px;
+    }
 }
 
 
@@ -548,6 +579,10 @@
 
     /* registration form */
 
+    .form-main-container {
+        padding: 60px 10px 30px 10px;
+    }
+
     form h3.form-main-heading {
         font-size: 2rem;
     }
@@ -557,11 +592,89 @@
     }
 
     .form-content .input-field input {
+        font-size: 14px;
+    }
+
+    #marry-country-input::placeholder {
+        font-size: 14px;
+    }
+
+    .form-buttons .form-btn {
+        font-size: 15px;
+    }
+
+    .form-content p a {
+        font-size: 15px;
+    }
+
+    .checkmark {
+        width: 19px;
+        height: 19px;
+    }
+
+    .container-checkbox {
+        padding-left: 27px;
+    }
+
+    .form-content .date-checkbox,
+    .form-content .country-checkbox {
         font-size: 12px;
+    }
+
+    .marry-country,
+    .marry-date {
+        font-size: 14px;
+    }
+
+    
+    /* Modal responsiveness */
+
+    .modal-box {
+        max-width: 280px;
+        width: 100%;
+        height: 230px;
+    }
+
+    .modal .modal-box img{
+        height:50px;
+        width: 50px;
+    }
+
+    .modal .modal-box h4{
+        font-size: 1.2rem;
+    }
+
+    .modal .modal-box p{
+        font-size: 13px;
+    }
+
+    /* login responsiveness */
+
+    .container .login-to-signup{
+        font-size: 13px;
+    }
+
+    /* conatct page */
+
+    .contactUs .title h2 {
+        font-size: 2.3rem;
     }
 }
 
 @media (max-width:400px) {
+
+    /* hero section */
+
+    .hero-section h3 {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+
+    .hero-section h4 {
+        font-size: 1rem;
+    }
+
+    /* About page */
     .main-about .main-about-heading {
         font-size: 1.5rem;
     }
@@ -573,20 +686,48 @@
     /* registration form */
 
     .form-content p {
-        font-size: 14px;
+        font-size: 11px;
     }
 
     .form-content p a {
-        font-size: 15px;
+        font-size: 12px;
+    }
+
+    .validation-error {
+        font-size: 10px;
+    }
+
+    .validation-password-error p {
+        font-size: 9px;
+    }
+
+    .form-buttons .form-btn {
+        font-size: 12px;
+        padding: 5px 20px;
+    }
+
+    .form-buttons button img.left-arrow,
+    .form-buttons button img.right-arrow {
+        height: 12px;
+    }
+
+    .marry-country,
+    .marry-date {
+        font-size: 13px;
+    }
+
+    .reg-password img#eye-password {
+        height: 12px;
     }
 
     /* Testimonial section Resp. */
 
-    .testimonial-card__upper .testimonial__customer-detail{
+    .testimonial-card__upper .testimonial__customer-detail {
         margin-left: 15px;
 
     }
-    .testimonial__customer-detail p{
+
+    .testimonial__customer-detail p {
         font-size: 1.1rem;
         font-weight: 650;
     }
@@ -594,7 +735,16 @@
     .testimonial__customer-detail .star-rating {
         font-size: 12px;
     }
+
+     /* Modal responsiveness */
+
+     .modal-box {
+        max-width: 270px;
+        width: 100%;
+        height: 200px;
+    }
+
+    .modal .modal-box a #okButton {
+        padding: 8px 60px;
+    }
 }
-
-
-
